@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="car.api/car.api.csproj" />
+  <Project Path="car.tests/car.tests.csproj" />
+</Solution>

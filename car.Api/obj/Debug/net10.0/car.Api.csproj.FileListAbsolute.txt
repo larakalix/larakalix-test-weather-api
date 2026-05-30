@@ -1,0 +1,8 @@
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.csproj.AssemblyReference.cache
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.AssemblyInfoInputs.cache
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.AssemblyInfo.cs
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.csproj.CoreCompileInputs.cache
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Repos\car-api\car.Api\obj\Debug\net10.0\car.Api.MvcApplicationPartsAssemblyInfo.cache
