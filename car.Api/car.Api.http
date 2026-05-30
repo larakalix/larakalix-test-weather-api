@@ -1,6 +1,14 @@
-@car.Api_HostAddress = http://localhost:5022
+@local_HostAddress = http://localhost:5022
+@docker_HostAddress = http://localhost:8080
 
-GET {{car.Api_HostAddress}}/weatherforecast/
+### Get all car brands - Local
+GET {{local_HostAddress}}/api/MarcasAutos
+Accept: application/json
+
+###
+
+### Get all car brands - Docker
+GET {{docker_HostAddress}}/api/MarcasAutos
 Accept: application/json
 
 ###

@@ -153,62 +153,6 @@ El proyecto de pruebas utiliza:
 * Pruebas para el service
 * Pruebas para el repository
 
-## Cobertura de Pruebas
-
-Para ejecutar las pruebas con cobertura, primero asegúrate de que el proyecto de pruebas tenga instalado Coverlet:
-
-```bash
-dotnet add car.Tests package coverlet.collector
-```
-
-Luego ejecuta:
-
-```bash
-dotnet test car.Tests --collect:"XPlat Code Coverage"
-```
-
-Esto genera un reporte de cobertura dentro de:
-
-```txt
-car.Tests/TestResults/
-```
-
-## Generar Reporte HTML de Cobertura
-
-Instala ReportGenerator:
-
-```bash
-dotnet tool install --global dotnet-reportgenerator-globaltool
-```
-
-Luego genera el reporte HTML:
-
-```bash
-reportgenerator -reports:"car.Tests/TestResults/**/coverage.cobertura.xml" -targetdir:"coverage-report" -reporttypes:Html
-```
-
-Abre el reporte generado:
-
-```txt
-coverage-report/index.html
-```
-
-## Validar Cobertura Mínima del 70%
-
-Para validar una cobertura mínima del 70%, instala Coverlet MSBuild:
-
-```bash
-dotnet add car.Tests package coverlet.msbuild
-```
-
-Luego ejecuta:
-
-```bash
-dotnet test car.Tests /p:CollectCoverage=true /p:Threshold=70 /p:ThresholdType=line /p:ThresholdStat=total
-```
-
-El comando fallará si la cobertura total de líneas es menor al 70%.
-
 ## Comandos Útiles de Docker
 
 Detener los contenedores:
@@ -281,22 +225,6 @@ Maneja el acceso a datos utilizando Entity Framework Core.
 ### DbContext
 
 Configura la conexión a la base de datos, el mapeo de entidades, las migraciones y los datos iniciales.
-
-## Flujo Principal del Endpoint
-
-```txt
-GET /api/MarcasAutos
-        ↓
-MarcasAutosController
-        ↓
-MarcasAutosService
-        ↓
-MarcasAutosRepository
-        ↓
-ApplicationDbContext
-        ↓
-PostgreSQL
-```
 
 ## Notas
 
